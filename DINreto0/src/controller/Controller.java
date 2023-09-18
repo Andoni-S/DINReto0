@@ -1,20 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * The Controller class is responsible for coordinating the interaction between the Model and the View.
+ * It contains a method named 'run' that takes instances of Model and View as parameters.
+ *
+ * @author andoni, ander
+ * @version 1.0
  */
 package controller;
 
 import model.Model;
 import view.View;
 
-/**
- *
- * @author 2dam
- */
 public class Controller {
-    
-    public void run(Model model, View view){
+
+    /**
+     * Runs the application by obtaining a greeting message from the Model and displaying it through the View.
+     *
+     * @param model An instance of the Model interface providing the greeting message.
+     * @param view  An instance of the View interface for displaying the greeting message.
+     */
+    public void run(Model model, View view) {
         String str = model.getGreeting();
         view.showGreeting(str);
     }

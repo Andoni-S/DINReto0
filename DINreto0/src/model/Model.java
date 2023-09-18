@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * The Model interface defines the contract for classes representing a model that retrieves greeting messages.
+ * Implementing classes should provide the implementation for the 'getGreeting' method, which retrieves the greeting message.
+ *
+ * @authors Andoni, Ander
  */
 package model;
 
-/**
- *
- * @author 2dam
- */
 public interface Model {
+    /**
+     * Retrieves a greeting message.
+     *
+     * @return A greeting message.
+     */
     public String getGreeting();
 }

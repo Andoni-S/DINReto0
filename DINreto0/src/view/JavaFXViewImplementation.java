@@ -1,19 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * The JavaFXViewImplementation class is an implementation of the View interface.
+ * It represents a view using JavaFX for displaying a greeting message.
+ * This class currently throws an UnsupportedOperationException for the 'showGreeting' method, indicating that it's not yet implemented.
+ *
+ * @authors Andoni, Ander
  */
 package view;
 
-/**
- *
- * @author 2dam
- */
-public class JavaFXViewImplementation implements View{
+public class JavaFXViewImplementation implements View {
 
     @Override
     public void showGreeting(String greeting) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); // To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

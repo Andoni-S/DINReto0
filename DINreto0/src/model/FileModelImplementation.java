@@ -1,19 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * The FileModelImplementation class is an implementation of the Model interface.
+ * It represents a model that retrieves a greeting message from a configuration file.
+ * This class reads the greeting message from a resource bundle named "application.Config".
+ *
+ * @authors Andoni, Ander
  */
 package model;
+import java.util.ResourceBundle;
 
-/**
- *
- * @author 2dam
- */
-public class FileModelImplementation implements Model{
+public class FileModelImplementation implements Model {
 
     @Override
     public String getGreeting() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        ResourceBundle configFile = ResourceBundle.getBundle("application.Config");
+        return configFile.getString("GREETING");
     }
     
+ 
 }
