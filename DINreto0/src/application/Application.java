@@ -11,10 +11,6 @@ import controller.Controller;
 import factory.ModelFactory;
 import factory.ViewFactory;
 import java.util.ResourceBundle;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 import model.Model;
 import view.View;
 
