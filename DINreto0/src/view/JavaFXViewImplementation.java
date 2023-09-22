@@ -14,36 +14,38 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class JavaFXViewImplementation implements View {
+public class JavaFXViewImplementation extends javafx.application.Application implements View {
 
-    @FXML private Label lblOutput;
+
+    public String greeting;
     
     @Override
     public void showGreeting(String greeting) {
-       /* Parent root = null; 
-        try {
-            root = FXMLLoader.load(getClass().getResource("application/FXMLDocument.fxml"));
-        } catch (IOException ex) {
-            Logger.getLogger(JavaFXViewImplementation.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        Stage stage = new Stage();
-        stage.setTitle("Hello World!");
-        
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        //Label label = new Label();
-        //root.getChildren().add(label);
-        
-        lblOutput.setText(greeting);
-        
-        
-        //stage.setScene(new Scene(root, 300, 200));
-        stage.show();*/
+        this.greeting = greeting;
+        launch();
+       
     }
 
+    @Override
+    public void start(Stage primaryStage) throws Exception {
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument.fxml"));
+        Parent root = loader.load();
+        FXMLDocumentController viewController = loader.getController();
+ 
+        
+        viewController.setGreeting(greeting);
+        
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        
+        primaryStage.setTitle("Hello World!"); 
+        
+        /*Label label = new Label();
+        root.getChildren().add(label);*/
+        
+        primaryStage.show();
+    }
 }

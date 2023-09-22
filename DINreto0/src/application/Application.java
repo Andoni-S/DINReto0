@@ -22,34 +22,35 @@ import view.View;
  *
  * @author andoni,ander
  */
-public class Application extends javafx.application.Application {
+public class Application /*extends javafx.application.Application*/ {
     
-    @Override
+   /* @Override
     public void start(Stage stage) throws Exception {
-        Controller cont = new Controller();
         
-        ResourceBundle configFile = ResourceBundle.getBundle("application.Config");
-        int model = Integer.parseInt(configFile.getString("MODEL"));
-	int view = Integer.parseInt(configFile.getString("VIEW"));
         
-        Model m = ModelFactory.getModel(model);
-        View v = ViewFactory.getView(view);
+       
         
         /*if(view==1){
                
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-        }*/
-        cont.run(m, v);
-
-    }
+        }
+    }*/
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        launch(args);
+         
+        Controller cont = new Controller();
+        ResourceBundle configFile = ResourceBundle.getBundle("application.Config");
+        int model = Integer.parseInt(configFile.getString("MODEL"));
+	int view = Integer.parseInt(configFile.getString("VIEW"));
+        
+        Model m = ModelFactory.getModel(model);
+        View v = ViewFactory.getView(view);
+        cont.run(m, v);
     }
     
 }

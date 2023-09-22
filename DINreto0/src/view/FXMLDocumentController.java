@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package application;
+package view;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,20 +16,18 @@ import javafx.scene.control.Label;
  *
  * @author andoni,ander
  */
-public class FXMLDocumentController implements Initializable {
+public class FXMLDocumentController {
     
     @FXML
     private Label label;
-    
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private String greeting;
+
+    public void setGreeting(String greeting) {
+        this.greeting = greeting;
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+
+    public String getGreeting() {
+        return greeting;
+    }
     
 }
