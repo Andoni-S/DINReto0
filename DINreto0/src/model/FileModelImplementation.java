@@ -3,7 +3,7 @@
  * It represents a model that retrieves a greeting message from a configuration file.
  * This class reads the greeting message from a resource bundle named "application.Config".
  *
- * @authors Andoni, Ander
+ * @authors Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package model;
 

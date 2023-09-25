@@ -3,7 +3,7 @@
  *
  * Shows a greeting inside a user interface.
  *
- * @authors Andoni, Ander
+ * @authors Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package view;
 

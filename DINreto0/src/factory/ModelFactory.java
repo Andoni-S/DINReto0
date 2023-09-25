@@ -3,7 +3,7 @@
  * It contains a method named getModel that takes an integer parameter 'type' and returns an instance of the Model interface
  * based on the specified type.
  *
- * @author Andoni, Ander
+ * @author Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package factory;
 

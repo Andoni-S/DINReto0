@@ -3,7 +3,7 @@
  * It represents a view using JavaFX for displaying a greeting message.
  * This class currently throws an UnsupportedOperationException for the 'showGreeting' method, indicating that it's not yet implemented.
  *
- * @authors Andoni, Ander
+ * @authors Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package view;
 

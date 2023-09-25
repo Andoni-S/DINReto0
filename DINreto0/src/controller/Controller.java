@@ -2,8 +2,7 @@
  * The Controller class is responsible for coordinating the interaction between the Model and the View.
  * It contains a method named 'run' that takes instances of Model and View as parameters.
  *
- * @author andoni, ander
- * @version 1.0
+ * @author Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package controller;
 

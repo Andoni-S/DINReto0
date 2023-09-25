@@ -1,10 +1,3 @@
-
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- /* and open the template in the editor.
- */
 package application;
 
 import controller.Controller;
@@ -15,30 +8,24 @@ import model.Model;
 import view.View;
 
 /**
- *
- * @author andoni,ander
+ * The main class of the application responsible for initializing and starting the application.
+ * It reads configuration values from a resource bundle and initializes the Model, View, and Controller
+ * components based on the configuration.
+ * 
+ * The application expects configuration properties in a resource bundle named "application.Config".
+ * The required properties are:
+ * - "MODEL": An integer representing the desired Model implementation.
+ * - "VIEW": An integer representing the desired View implementation.
+ * 
+ * After initializing the components, it passes them to the Controller and starts the application.
+ * 
+ * @author Andoni Sanz, Ander Goirigolzarri Iturburu
  */
-public class Application /*extends javafx.application.Application*/ {
-    
-   /* @Override
-    public void start(Stage stage) throws Exception {
-        
-        
-       
-        
-        /*if(view==1){
-               
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
-        }
-    }*/
-
+public class Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-         
+    public static void main(String[] args) {    
         Controller cont = new Controller();
         ResourceBundle configFile = ResourceBundle.getBundle("application.Config");
         int model = Integer.parseInt(configFile.getString("MODEL"));
@@ -47,6 +34,5 @@ public class Application /*extends javafx.application.Application*/ {
         Model m = ModelFactory.getModel(model);
         View v = ViewFactory.getView(view);
         cont.run(m, v);
-    }
-    
+    } 
 }

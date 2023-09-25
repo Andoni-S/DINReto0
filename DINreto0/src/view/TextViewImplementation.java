@@ -3,7 +3,7 @@
  * It represents a text-based view for displaying a greeting message.
  * This class prints the greeting message to the standard output using System.out.println.
  *
- * The author of this class is 2dam.
+ * @authors Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package view;
 

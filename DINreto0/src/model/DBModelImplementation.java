@@ -3,7 +3,7 @@
  * It represents a model that interacts with a database to retrieve greeting information.
  * This class currently throws an UnsupportedOperationException for the 'getGreeting' method, indicating that it's not yet implemented.
  *
- * @authors Andoni, Ander
+ * @authors Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package model;
 
@@ -18,35 +18,26 @@ public class DBModelImplementation implements Model {
     protected Connection con;
     protected PreparedStatement stmt;
     protected DBConnection conController = new DBConnection();
-    protected ResultSet rset;
-    
+    protected ResultSet rs;
+
     @Override
     public String getGreeting() {
-       ResultSet rs = null;
-       String greet = null;
-            try {
-			
-                con = conController.openConnection();
-		String OBTAINgreeting = "SELECT greeting FROM HELLOWORLD";
+        rs = null;
+        String greet = null;
+        try {
+            con = conController.openConnection();
+            String OBTAINgreeting = "SELECT greeting FROM HELLOWORLD";
 
-		
-		
-		stmt = con.prepareStatement(OBTAINgreeting);
-		rs = stmt.executeQuery();
+            stmt = con.prepareStatement(OBTAINgreeting);
+            rs = stmt.executeQuery();
 
-                
-		if (rs.next()) {		
-                    greet = new String(rs.getString("greeting"));
-
-		}		
-
-		conController.closeConnection(stmt, con);
-
-		} catch (SQLException e) {
-                     System.err.print(e.getMessage());
-		}
-		
-		return greet;	
-	}
+            if (rs.next()) {
+                greet = new String(rs.getString("greeting"));
+            }
+            conController.closeConnection(stmt, con);
+        } catch (SQLException e) {
+            System.err.print(e.getMessage());
+        }
+        return greet;
+    }
 }
-

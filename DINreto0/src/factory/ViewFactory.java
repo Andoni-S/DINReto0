@@ -5,7 +5,7 @@
  *
  * This class is responsible for creating different implementations of the View interface.
  *
- * @author Andoni, Ander
+ * @author Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 package factory;
 
