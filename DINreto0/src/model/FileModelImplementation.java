@@ -6,15 +6,15 @@
  * @authors Andoni, Ander
  */
 package model;
+
+
 import java.util.ResourceBundle;
 
 public class FileModelImplementation implements Model {
 
     @Override
-    public String getGreeting() {
+    public String getGreeting() throws Exception{
         ResourceBundle configFile = ResourceBundle.getBundle("application.Config");
         return configFile.getString("GREETING");
     }
-    
- 
 }

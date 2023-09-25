@@ -3,20 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/view/FXMLDocument.fxml</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/model/FileModelImplementation.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/view/TextViewImplementation.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/application/Config.properties</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/controller/Controller.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/view/JavaFXViewImplementation.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/application/Application.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/factory/ViewFactory.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/model/Model.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/controller/DBConnection.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/view/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/factory/ModelFactory.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/view/View.java</file>
-            <file>file:/C:/Users/2dam/Documents/NetBeansProjects/JavaFXApplication3/src/model/DBModelImplementation.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINReto0/src/model/FileModelImplementation.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINReto0/src/model/DBModelImplementation.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINReto0/src/controller/Controller.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINReto0/src/model/Model.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINreto0/test/model/FileModelImplementationTest.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINreto0/test/model/DBModelImplementationTest.java</file>
+            <file>file:/C:/Users/angoi/Documents/NetBeansProjects/DINReto0/DINReto0/src/application/Config.properties</file>
         </group>
     </open-files>
 </project-private>

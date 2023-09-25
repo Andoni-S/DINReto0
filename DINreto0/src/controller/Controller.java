@@ -19,7 +19,11 @@ public class Controller {
      * @param view  An instance of the View interface for displaying the greeting message.
      */
     public void run(Model model, View view) {
-        String str = model.getGreeting();
-        view.showGreeting(str);
+        try{
+            String str = model.getGreeting();
+            view.showGreeting(str);
+        } catch (Exception e) {
+            System.out.println("Ha ocurrido un error al acceder al saludo");
+        }
     }
 }

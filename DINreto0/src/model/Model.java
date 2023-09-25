@@ -11,6 +11,7 @@ public interface Model {
      * Retrieves a greeting message.
      *
      * @return A greeting message.
+     * @throws java.lang.Exception
      */
-    public String getGreeting();
+    public String getGreeting()throws Exception;
 }
