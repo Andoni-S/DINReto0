@@ -10,7 +10,7 @@ import org.junit.Test;
 
 /**
  *
- * @author 2dam
+ * @author Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 public class FileModelImplementationTest {
     

@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author 2dam
+ * @author Andoni Sanz, Ander Goirigolzarri Iturburu
  */
 public class DBModelImplementationTest {
 
@@ -22,10 +22,13 @@ public class DBModelImplementationTest {
      */
     @Test
     public void testGetGreeting() {
-        DBModelImplementation instance = new DBModelImplementation();
-        String expResult = "greeting";
-        String result = instance.getGreeting();
-        assertEquals(expResult, result);
+        try {
+            DBModelImplementation instance = new DBModelImplementation();
+            String result = instance.getGreeting();
+            assertEquals("greeting", result);
+        } catch (Exception e) {
+            fail("Se lanzó una excepción: " + e.getMessage());
+        }
     }
 
 }
