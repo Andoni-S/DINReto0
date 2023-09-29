@@ -3,7 +3,7 @@ Authors: Andoni Sanz, Ander Goirigolzarri Iturburu
 
 On-line Repository URL: https://github.com/Andoni-S/DINReto0
 
-mysql-connector-java-8.0.15.jar
+JAR files used as libraries: mysql-connector-java-8.0.15.jar
 
 To indicate which implementation and which source for the data to use, the parameters MODEL and VIEW must be informed in the Config.properties file.
 
